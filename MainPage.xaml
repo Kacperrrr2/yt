@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.MainPage" BackgroundColor="SeaGreen">
+    <Grid>
+        <Grid.RowDefinitions>
+        <RowDefinition/>
+        <RowDefinition />
+        <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+    </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+        <ColumnDefinition />
+        <ColumnDefinition />
+        <ColumnDefinition />
+        <ColumnDefinition />
+        <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+
+        <Button ImageSource="obraz3.png" Grid.Row="1" Grid.Column="0" BackgroundColor="SeaGreen" Clicked="Button_Clicked_1"/>
+        <Button ImageSource="obraz2.png" Grid.Row="1" Grid.Column="6" BackgroundColor="SeaGreen"  Clicked="Button_Clicked"/>
+        <Label x:Name="labelArtist"  Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="3" FontSize="50" Text="jajajja" TextColor="White"/>
+        <Label x:Name="labelAlbum"   Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="3" Text="jajajja" FontSize="30" TextColor="White"/>
+        <Label x:Name="labelSongsNumber"  Grid.Row="2" Grid.Column="3" Text="jajajja" FontSize="30" TextColor="White"/>
+        <Label x:Name="labelYearOfedidtion"  Grid.Row="2" Grid.Column="4" Text="jajajja" FontSize="30" TextColor="White"/>
+        <Label x:Name="labelDownloadNumber"   Grid.Row="4" Grid.Column="2"   FontSize="30" TextColor="White"/>
+        <Button Text="Pobierz" Clicked="Button_Clicked_2" Background="#61D918" FontSize="20" FontAttributes="Bold" TextColor="Black" CornerRadius="0" Margin="0"  Grid.Row="4" Grid.Column="3"/>
+        <Image Source="obraz.png" Grid.RowSpan="2" Grid.Column="2"/>
+
+    </Grid>
+
+</ContentPage>
